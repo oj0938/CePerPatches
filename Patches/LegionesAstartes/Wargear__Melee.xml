@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Legiones Astartes: Primarch</li>
+			</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+	
+	<!--==================== Worldbreaker =========================-->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Worldbreaker"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>pommel</label>
+					<capacities>
+						<li>LAP_ThunderBlunt</li>
+					</capacities>
+					<power>48</power>
+					<cooldownTime>2.55</cooldownTime>
+					<armorPenetrationBlunt>157.3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Worldbreaker"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Worldbreaker"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.75</MeleeCritChance>
+				<MeleeParryChance>0.3</MeleeParryChance>
+				<MeleeDodgeChance>0.3</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>		
+	<!--==================== Forgebreaker =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>pommel</label>
+					<capacities>
+						<li>LAP_ThunderBlunt</li>
+					</capacities>
+					<power>42</power>
+					<cooldownTime>2.2</cooldownTime>
+					<armorPenetrationBlunt>128</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Forgebreaker"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.75</MeleeCritChance>
+				<MeleeParryChance>0.3</MeleeParryChance>
+				<MeleeDodgeChance>0.3</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+
+	<!--==================== Widowmaker =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Widowmaker"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>42</power>
+					<cooldownTime>0.5</cooldownTime>
+					<armorPenetrationBlunt>60</armorPenetrationBlunt>
+					<armorPenetrationSharp>26</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Widowmaker"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Widowmaker"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.25</MeleeCritChance>
+				<MeleeParryChance>0.4</MeleeParryChance>
+				<MeleeDodgeChance>0.25</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+	
+	<!--==================== Gorefather =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorefather"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>42</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetrationBlunt>46</armorPenetrationBlunt>
+					<armorPenetrationSharp>16</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorefather"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorefather"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.6</MeleeCritChance>
+				<MeleeParryChance>0.42</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<!--==================== Gorefather =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorechild"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>36</power>
+					<cooldownTime>0.6</cooldownTime>
+					<armorPenetrationBlunt>42</armorPenetrationBlunt>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorechild"]/statBases</xpath>
+		<value>
+			<Bulk>9.2</Bulk>
+			<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Gorechild"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.6</MeleeCritChance>
+				<MeleeParryChance>0.42</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<!--==================== Mercy and Forgiveness =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>36</power>
+					<cooldownTime>0.8</cooldownTime>
+					<armorPenetrationBlunt>2.85</armorPenetrationBlunt>
+					<armorPenetrationSharp>22</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>0.8</cooldownTime>
+					<armorPenetrationBlunt>3.1</armorPenetrationBlunt>
+					<armorPenetrationSharp>30</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]/statBases</xpath>
+		<value>
+			<Bulk>9.2</Bulk>
+			<MeleeCounterParryBonus>0.7</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Mercy_and_Forgiveness"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.2</MeleeCritChance>
+				<MeleeParryChance>0.64</MeleeParryChance>
+				<MeleeDodgeChance>0.42</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+	
+	<!--==================== Lion Sword =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LionSword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>44</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>24</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>1.75</cooldownTime>
+					<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>35</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LionSword"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LionSword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.00</MeleeCritChance>
+				<MeleeParryChance>0.6</MeleeParryChance>
+				<MeleeDodgeChance>0.4</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+	
+	<!--==================== Wolf Blade =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>pommel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>3.45</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>0.65</cooldownTime>
+					<armorPenetrationBlunt>8</armorPenetrationBlunt>
+					<armorPenetrationSharp>20</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>1.4</cooldownTime>
+					<armorPenetrationBlunt>30</armorPenetrationBlunt>
+					<armorPenetrationSharp>14</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_WolfBlade"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.1</MeleeCritChance>
+				<MeleeParryChance>0.3</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<!--==================== Blade Encarmine =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>44</power>
+					<cooldownTime>1.75</cooldownTime>
+					<armorPenetrationBlunt>8</armorPenetrationBlunt>
+					<armorPenetrationSharp>24</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>2.2</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>36</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Blade_Encarmine"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.1</MeleeCritChance>
+				<MeleeParryChance>0.3</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+
+	<!--==================== Guardian Spear =========================-->
+
+		<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<defName>LAP_WEAP_GuardianSpear</defName>
+				<statBases>
+					<SightsEfficiency>1.10</SightsEfficiency>
+					<ShotSpread>0.16</ShotSpread>
+					<SwayFactor>1.784</SwayFactor>
+					<Bulk>19.50</Bulk>
+					<Mass>5.40</Mass>
+					<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+				</statBases>				
+				<Properties>
+					<recoilAmount>1</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>OGI_Bullet_BoltStd</defaultProjectile>
+					<warmupTime>0.5</warmupTime>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<range>25</range>
+					<soundCast>OG_Bolt_Gun_Sound</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>14</muzzleFlashScale>
+				</Properties>
+				
+				<AmmoUser>
+					<magazineSize>10</magazineSize>
+					<reloadTime>5</reloadTime>
+					<ammoSet>AmmoSet_OGBoltStd</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiAimMode>Snapshot</aiAimMode>
+				</FireModes>
+			</li>
+			
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>13</power>
+					<cooldownTime>1.86</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>42</power>
+					<cooldownTime>1.86</cooldownTime>
+					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<armorPenetrationSharp>26</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>40</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]/statBases</xpath>
+		<value>
+			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_GuardianSpear"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>1.6</MeleeParryChance>
+				<MeleeDodgeChance>0.62</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+	
+	<!--==================== Apollonian Spear =========================-->
+
+		<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<defName>LAP_WEAP_ApollonianSpear</defName>
+				<statBases>
+					<SightsEfficiency>1.10</SightsEfficiency>
+					<ShotSpread>0.16</ShotSpread>
+					<SwayFactor>1.784</SwayFactor>
+					<Bulk>19.50</Bulk>
+					<Mass>5.40</Mass>
+					<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+				</statBases>				
+				<Properties>
+					<recoilAmount>1</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>OGI_Bullet_BoltStd</defaultProjectile>
+					<warmupTime>0.5</warmupTime>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<range>25</range>
+					<soundCast>OG_Bolt_Gun_Sound</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>14</muzzleFlashScale>
+				</Properties>
+				
+				<AmmoUser>
+					<magazineSize>10</magazineSize>
+					<reloadTime>5</reloadTime>
+					<ammoSet>AmmoSet_OGBoltStd</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiAimMode>Snapshot</aiAimMode>
+				</FireModes>
+			</li>
+			
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ApollonianSpear"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>13</power>
+					<cooldownTime>1.86</cooldownTime>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>50</power>
+					<cooldownTime>2.3</cooldownTime>
+					<chanceFactor>1</chanceFactor>
+					<armorPenetrationBlunt>5</armorPenetrationBlunt>
+					<armorPenetrationSharp>26</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>2.5</cooldownTime>
+					<chanceFactor>1</chanceFactor>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>42</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ApollonianSpear"]/statBases</xpath>
+		<value>
+			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ApollonianSpear"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>1.6</MeleeParryChance>
+				<MeleeDodgeChance>0.62</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>
+	
+	<!--==================== Sentinel Blade =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>1.15</cooldownTime>
+					<armorPenetrationBlunt>14.8</armorPenetrationBlunt>
+					<armorPenetrationSharp>28.6</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.45</cooldownTime>
+					<armorPenetrationBlunt>8.45</armorPenetrationBlunt>
+					<armorPenetrationSharp>30.3</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_SentinelBlade"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.4</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.3</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+		
+	
+	<!--==================== Emperor Sword =========================-->
+	
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>42</power>
+							<extraMeleeDamages>
+							<li>
+								<def>Flame</def>
+								<amount>8</amount>
+								<chance>0.3</chance>
+							</li>
+							</extraMeleeDamages>
+					<cooldownTime>1.9</cooldownTime>
+					<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+					<armorPenetrationSharp>25</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>21</power>
+							<extraMeleeDamages>
+							<li>
+								<def>Flame</def>
+								<amount>8</amount>
+								<chance>0.3</chance>
+							</li>
+							</extraMeleeDamages>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>4.87</armorPenetrationBlunt>
+					<armorPenetrationSharp>39.4</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Emperor_Sword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.26</MeleeCritChance>
+				<MeleeParryChance>0.6</MeleeParryChance>
+				<MeleeDodgeChance>0.4</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+			<!--==================== Drachnyen Sword =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DaemonWeapon_Drachnyen"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_DaemonWeapon_Slash</li>
+					</capacities>
+					<power>52</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>15</armorPenetrationBlunt>
+					<armorPenetrationSharp>32</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>LAP_DaemonWeapon_Stab</li>
+					</capacities>
+					<power>34</power>
+					<cooldownTime>1.8</cooldownTime>
+					<armorPenetrationBlunt>6.75</armorPenetrationBlunt>
+					<armorPenetrationSharp>48</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DaemonWeapon_Drachnyen"]/statBases</xpath>
+		<value>
+			<Bulk>7</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DaemonWeapon_Drachnyen"]/equippedStatOffsets</xpath>
+		<value>
+				<MeleeCritChance>0.26</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+		</value>
+	</li>	
+
+
+	<!--==================== Power Axe =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>32</power>
+					<cooldownTime>1.76</cooldownTime>
+					<armorPenetrationBlunt>12.45</armorPenetrationBlunt>
+					<armorPenetrationSharp>18.84</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.26</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerAxe"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>
+
+	<!--==================== Lightning Claw =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>0.5</cooldownTime>
+					<armorPenetrationBlunt>3.45</armorPenetrationBlunt>
+					<armorPenetrationSharp>15.5</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>0.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>17.6</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.56</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.4</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_LightningClaw"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>
+	
+	<!--==================== Power Fist =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>fist</label>
+					<capacities>
+						<li>LAP_PowerWeapon_Blunt</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>68</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/statBases</xpath>
+		<value>
+			<Bulk>3.5</Bulk>
+			<MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerFist"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.6</MeleeCritChance>
+				<MeleeParryChance>0.2</MeleeParryChance>
+				<MeleeDodgeChance>0.4</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerFist"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>
+	
+	<!--==================== Chain Fist =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainFist"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>fist</label>
+					<capacities>
+						<li>LAP_PowerWeapon_Blunt</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>48</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>9.8</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainFist"]/statBases</xpath>
+		<value>
+			<Bulk>3.5</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainFist"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.56</MeleeCritChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.4</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainFist"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>	
+	
+
+	<!--==================== Chain Sword =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>pommel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.4</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>26</power>
+					<cooldownTime>0.3</cooldownTime>
+					<armorPenetrationBlunt>9</armorPenetrationBlunt>
+					<armorPenetrationSharp>7.75</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetrationBlunt>3.45</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainSword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.26</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainSword"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>	
+
+	<!--==================== Chain Axe =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>pommel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.15</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>0.5</cooldownTime>
+					<armorPenetrationBlunt>7.2</armorPenetrationBlunt>
+					<armorPenetrationSharp>9.82</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.26</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ChainAxe"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>
+
+	<!--==================== Power Sword =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>OG_PowerWeapon_Cut</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>1.2</cooldownTime>
+					<armorPenetrationBlunt>10.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>15.46</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>OG_PowerWeapon_Stab</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.45</cooldownTime>
+					<armorPenetrationBlunt>3.45</armorPenetrationBlunt>
+					<armorPenetrationSharp>17.82</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/statBases</xpath>
+		<value>
+			<Bulk>3.5</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerSword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.26</MeleeCritChance>
+				<MeleeParryChance>0.46</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_PowerSword"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>
+
+	<!--==================== Thunder Hammer  =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>fist</label>
+					<capacities>
+						<li>LAP_ThunderBlunt</li>
+					</capacities>
+					<power>38</power>
+					<cooldownTime>2.3</cooldownTime>
+					<armorPenetrationBlunt>160</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]/statBases</xpath>
+		<value>
+			<Bulk>9</Bulk>
+			<MeleeCounterParryBonus>1</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_ThunderHammer"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.6</MeleeCritChance>
+				<MeleeParryChance>0.2</MeleeParryChance>
+				<MeleeDodgeChance>0.15</MeleeDodgeChance>						
+			</equippedStatOffsets>
+		</value>
+	</li>	
+
+	<!--==================== Narthecium =========================-->
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Narthecium"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>chainblade</label>
+					<capacities>
+						<li>LAP_ChainAxe_Cut</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>0.4</cooldownTime>
+					<armorPenetrationBlunt>2.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>7.5</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>Drilling</label>
+					<capacities>
+						<li>LAP_Drill_Pierce</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>0.8</cooldownTime>
+					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationSharp>7.8</armorPenetrationSharp>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Narthecium"]/statBases</xpath>
+		<value>
+			<Bulk>3.5</Bulk>
+			<MeleeCounterParryBonus>0.46</MeleeCounterParryBonus>					
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Narthecium"]/equippedStatOffsets</xpath>
+		<value>
+				<MeleeCritChance>0.2</MeleeCritChance>
+				<MeleeParryChance>0.2</MeleeParryChance>
+				<MeleeDodgeChance>0.5</MeleeDodgeChance>						
+		</value>
+	</li>	
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LAP_WEAP_Narthecium"]/weaponTags</xpath>
+		<value>
+		   <li>CE_OneHandedWeapon</li>
+		</value>
+	</li>	
+	
+	
+	</operations>
+	</match>
+</Operation>
+</Patch> 	

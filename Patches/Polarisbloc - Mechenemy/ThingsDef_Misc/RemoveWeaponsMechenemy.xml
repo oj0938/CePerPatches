@@ -1,0 +1,89 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Polarisbloc - Mechenemy</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		<operations>
+
+  <!-- Disable for player -->
+
+
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_KineticLancer"]</xpath>
+				<value>
+				  <tradeability>None</tradeability>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_SplitRifle"]</xpath>
+				<value>
+				  <tradeability>None</tradeability>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li>
+			  
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_CTMinigun"]</xpath>
+				<value>
+				  <tradeability>None</tradeability>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li>  
+
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_BundlingBlaster"]</xpath>
+				<value>
+				  <tradeability>None</tradeability>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li>    
+
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_DestoryerShocker"]</xpath>
+				<value>
+				  <tradeability>None</tradeability>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li> 
+
+			  <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_RailGun"]</xpath>
+				<value>
+				  <destroyOnDrop>True</destroyOnDrop>
+				  <menuHidden>True</menuHidden>
+				</value>
+			  </li> 
+			  
+			  <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_RailGun"]/tradeability</xpath>
+				<value>
+				   <tradeability>None</tradeability>
+				</value>
+			  </li> 
+
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>  
+  
+
+  
+
+
+  
+
+ 
+ 
+  

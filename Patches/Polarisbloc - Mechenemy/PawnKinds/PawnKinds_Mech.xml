@@ -1,0 +1,106 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		<li>Polarisbloc - Mechenemy</li>
+		</mods>
+
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<!--Alpha-Self Explode Droid-->
+	
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidAlpha"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>5</min>
+							<max>5</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>
+
+					<!--DroidBeta-->
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidBeta"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>100</min>
+							<max>100</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>
+					
+					<!--DroidBetaEX-->
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidBetaEX"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>100</min>
+							<max>100</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>
+
+					<!--DroidGamma-->
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidGamma"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>1</min>
+							<max>1</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidGammaEX"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>1</min>
+							<max>1</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>			
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidRuler"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>100</min>
+							<max>100</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>	
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/PawnKindDef[defName="VanyaPK_DroidFortress"]</xpath>
+						<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+							<min>100</min>
+							<max>100</max>
+						</primaryMagazineCount>
+						</li>
+						</value>
+					</li>					
+									
+
+				</operations>
+			</match>
+	</Operation>
+</Patch>

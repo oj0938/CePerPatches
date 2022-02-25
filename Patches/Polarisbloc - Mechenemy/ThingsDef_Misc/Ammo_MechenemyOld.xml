@@ -1,0 +1,470 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Polarisbloc - Mechenemy</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		<operations>
+					
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>AmmoSet_6x24mmVanyaSF</defName>
+						<label>6x24mm Charged Bullet (Hunter)</label>
+						<ammoTypes>
+						  <Ammo_6x24mmCharged>Bullet_6x24mmVanyaSF</Ammo_6x24mmCharged>
+						  <Ammo_6x24mmCharged_AP>Bullet_6x24mmVanyaSF_AP</Ammo_6x24mmCharged_AP>
+						  <Ammo_6x24mmCharged_Ion>Bullet_6x24mmVanya_Ion</Ammo_6x24mmCharged_Ion>
+						</ammoTypes>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_6x24mmVanyaSF</defName>
+						<label>6x24mm Charged VSF bullet</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>100</speed>
+						  <damageAmountBase>10</damageAmountBase>
+						  <secondaryDamage>
+							<li>
+							  <def>Bomb_Secondary</def>
+							  <amount>7</amount>
+							</li>
+						  </secondaryDamage>
+						  <armorPenetrationSharp>12</armorPenetrationSharp>
+						  <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_6x24mmVanyaSF_AP</defName>
+						<label>6x24mm Charged VSF bullet (Conc.)</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>100</speed>
+						  <damageAmountBase>10</damageAmountBase>
+						  <secondaryDamage>
+							<li>
+							  <def>Bomb_Secondary</def>
+							  <amount>4</amount>
+							</li>
+						  </secondaryDamage>
+						  <armorPenetrationSharp>24</armorPenetrationSharp>
+						  <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_6x24mmVanya_Ion</defName>
+						<label>6x24mm Charged VSF bullet (Ion)</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>100</speed>
+						  <damageAmountBase>10</damageAmountBase>
+						  <secondaryDamage>
+							<li>
+							  <def>EMP</def>
+							  <amount>8</amount>
+							</li>
+						  </secondaryDamage>
+						  <armorPenetrationSharp>18</armorPenetrationSharp>
+						  <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_8x35mmVanyaSF</defName>
+					<label>8x35mm Charged Bullet (Hunter)</label>
+					<ammoTypes>
+					  <Ammo_8x35mmCharged>Bullet_8x35mmVanyaSF</Ammo_8x35mmCharged>
+					  <Ammo_8x35mmCharged_AP>Bullet_8x35mmVanyaSF_AP</Ammo_8x35mmCharged_AP>
+					  <Ammo_8x35mmCharged_Ion>Bullet_8x35mmVanyaSF_Ion</Ammo_8x35mmCharged_Ion>
+					</ammoTypes>
+				  </CombatExtended.AmmoSetDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8x35mmChargedBullet">
+					<defName>Bullet_8x35mmVanyaSF</defName>
+					<label>8x35mm Charged VSF bullet</label>
+					<graphicData>
+					  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+					  <graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					  <damageAmountBase>17</damageAmountBase>
+					  <speed>90</speed>
+					  <secondaryDamage>
+						<li>
+						  <def>Bomb_Secondary</def>
+						  <amount>8</amount>
+						</li>
+					  </secondaryDamage>
+					  <armorPenetrationSharp>14</armorPenetrationSharp>
+					  <armorPenetrationBlunt>57.6</armorPenetrationBlunt>
+					</projectile>
+				  </ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8x35mmChargedBullet">
+					<defName>Bullet_8x35mmVanyaSF_AP</defName>
+					<label>8x35mm Charged VSF bullet (Conc.)</label>
+					<graphicData>
+					  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+					  <graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					  <damageAmountBase>12</damageAmountBase>
+					  <speed>90</speed>
+					  <secondaryDamage>
+						<li>
+						  <def>Bomb_Secondary</def>
+						  <amount>4</amount>
+						</li>
+					  </secondaryDamage>
+					  <armorPenetrationSharp>28</armorPenetrationSharp>
+					  <armorPenetrationBlunt>57.6</armorPenetrationBlunt>
+					</projectile>
+				  </ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8x35mmChargedBullet">
+					<defName>Bullet_8x35mmVanyaSF_Ion</defName>
+					<label>8x35mm Charged VSF bullet (Ion)</label>
+					<graphicData>
+					  <texPath>Vanya/Things/Projectile/Bullet_Vanya_StalkerRifle</texPath>
+					  <graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					  <damageAmountBase>9</damageAmountBase>
+					  <speed>90</speed>
+					  <secondaryDamage>
+						<li>
+						  <def>EMP</def>
+						  <amount>15</amount>
+						</li>
+					  </secondaryDamage>
+					  <armorPenetrationSharp>21</armorPenetrationSharp>
+					  <armorPenetrationBlunt>57.6</armorPenetrationBlunt>
+					</projectile>
+				  </ThingDef>
+				</value>
+			</li>	
+
+
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>AmmoSet_Hellsong</defName>
+						<label>Hellsong</label>
+						<ammoTypes>
+						  <Ammo_40x46mmGrenade_HE>Bullet_Hellsong_HE</Ammo_40x46mmGrenade_HE>
+						  <Ammo_40x46mmGrenade_EMP>Bullet_Hellsong_EMP</Ammo_40x46mmGrenade_EMP>
+						</ammoTypes>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>
+						
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_Hellsong_HE</defName>
+						<label>Hellsong (HE.)</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_HellSong</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>65</speed>
+						  <damageAmountBase>5</damageAmountBase>
+						  <explosionRadius>5.0</explosionRadius>	
+						  <soundExplode>MortarBomb_Explode</soundExplode>		
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>						  
+						  <secondaryDamage>
+							<li>
+							  <def>Bomb_Secondary</def>
+							  <amount>15</amount>
+							</li>
+						  </secondaryDamage>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_Hellsong_EMP</defName>
+						<label>Hellsong (Ion)</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_HellSong</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>65</speed>
+						  <damageAmountBase>5</damageAmountBase>
+						  <explosionRadius>5.0</explosionRadius>	
+						  <soundExplode>MortarBomb_Explode</soundExplode>		
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>					  
+						  <secondaryDamage>
+							<li>
+							  <def>EMP</def>
+							  <amount>24</amount>
+							</li>
+						  </secondaryDamage>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>				
+
+
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>Ammo_Set40x46mmGrenadesMech</defName>
+						<label>Ammo40x46mmGrenadesVSF (Mech)</label>
+						<ammoTypes>
+						  <Ammo_40x46mmGrenade_HE>Bullet_Vanya_DestoryerShocker</Ammo_40x46mmGrenade_HE>
+						</ammoTypes>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_Vanya_DestoryerShocker</defName>
+						<label>40x46mmGrenadesMech (Conc.)</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Vanya_BlueRocketBig</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>35</speed>
+						  <damageAmountBase>10</damageAmountBase>
+					      <explosionRadius>5.0</explosionRadius>	
+						  <soundExplode>MortarBomb_Explode</soundExplode>		
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>						  
+						  <armorPenetrationSharp>16</armorPenetrationSharp>
+						  <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+
+		<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>AmmoSet_Blaster</defName>
+						<label>Blaster Shell</label>
+						<ammoTypes>
+						  <Ammo_PlasmaCellRifle>Bullet_Vanya_BundlingBlaster</Ammo_PlasmaCellRifle>
+						</ammoTypes>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8x35mmChargedBullet">
+						<defName>Bullet_Vanya_BundlingBlaster</defName>
+						<label>Blaster Round </label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Vanya_BlueRocketSmall</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>35</speed>
+						  <damageAmountBase>12</damageAmountBase>
+					      <explosionRadius>3.0</explosionRadius>	
+						  <soundExplode>MortarBomb_Explode</soundExplode>
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_MTMRail</defName>
+					<label>Wolfranium Shell</label>
+					<ammoTypes>
+					  <Ammo_PlasmaCellRifle>Bullet_Vanya_RailGun</Ammo_PlasmaCellRifle>
+					</ammoTypes>
+				  </CombatExtended.AmmoSetDef>
+				</value>
+			</li>		
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8x35mmChargedBullet">
+						<defName>Bullet_Vanya_RailGun</defName>
+						<label>Wolfranium Round</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Item/Equipment/Vanya_RailGun</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>90</speed>
+						  <damageDef>Vanya_IgnoreDiffusionEX</damageDef>
+						  <damageAmountBase>18</damageAmountBase>
+						  <explosionRadius>1.8</explosionRadius>
+						  <soundExplode>MortarBomb_Explode</soundExplode>	
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>						  
+						  <secondaryDamage>
+							<li>
+							  <def>Bomb_Secondary</def>
+							  <amount>4</amount>
+							</li>
+						  </secondaryDamage>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>		
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>AmmoSet_MTMPlasmaMini</defName>
+						<label>Kinetic Lancer</label>
+						<ammoTypes>
+						  <Ammo_PlasmaCellRifle>Bullet_Vanya_KineticLancer</Ammo_PlasmaCellRifle>
+						</ammoTypes>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>		
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_Vanya_KineticLancer</defName>
+						<label>Kinetic Lance</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Item/Equipment/Vanya_KineticLancer</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>95</speed>
+						  <damageDef>Vanya_IgnoreDiffusionEX</damageDef>
+						  <damageAmountBase>5</damageAmountBase>
+						  <explosionRadius>0.5</explosionRadius>
+						  <soundExplode>MortarBomb_Explode</soundExplode>	
+						  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>						  
+						  <secondaryDamage>
+							<li>
+							  <def>EMP</def>
+							  <amount>12</amount>
+							</li>
+						  </secondaryDamage>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>				
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_5x35mmVanyaSF</defName>
+					<label>5x35mm Charged Bullet (Mech)</label>
+					<ammoTypes>
+					  <Ammo_5x35mmCharged>Bullet_5x35mmVanyaSF</Ammo_5x35mmCharged>
+					</ammoTypes>
+				  </CombatExtended.AmmoSetDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+						<defName>Bullet_5x35mmVanyaSF</defName>
+						<label>5x35mm Charged bullet</label>
+						<graphicData>
+						  <texPath>Vanya/Things/Projectile/Bullet_Vanya_Normal</texPath>
+						  <graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <speed>90</speed>
+						  <damageAmountBase>6</damageAmountBase>
+						  <secondaryDamage>
+							<li>
+							  <def>Bomb_Secondary</def>
+							  <amount>10</amount>
+							</li>
+						  </secondaryDamage>
+						  <armorPenetrationSharp>10</armorPenetrationSharp>
+						  <armorPenetrationBlunt>18</armorPenetrationBlunt>
+						</projectile>
+					</ThingDef>
+				</value>
+			</li>	
+			
+			
+			
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>

@@ -1,0 +1,83 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Polarisbloc - Mechenemy</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		
+		<operations>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CAFighter" or 
+					defName="VanyaPK_CAElite" or 
+					defName="VanyaPK_CAGunner" or
+					defName="VanyaPK_CASlugger"
+					]</xpath>
+				<value>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">	
+						<primaryMagazineCount>
+							<min>2</min>
+							<max>3</max>
+						</primaryMagazineCount>
+						<sidearms>
+							<li>
+								<generateChance>1</generateChance>
+								<sidearmMoney>
+									<min>200</min>
+									<max>400</max>
+								</sidearmMoney>
+								<weaponTags>
+									<li>CE_Sidearm_Melee</li>
+								</weaponTags>
+							</li>
+						</sidearms>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CAFighter" or 
+					defName="VanyaPK_CAElite" or 
+					defName="VanyaPK_CAGunner" or
+					defName="VanyaPK_CASlugger"
+					]/apparelRequired</xpath>
+				<value>
+					<li>Apparel_Backpack</li>
+					<li>Apparel_TacVest</li>
+				</value>
+			</li>	
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CAFighter"]/combatPower</xpath>
+				<value>
+					<combatPower>195</combatPower>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CAGunner"]/combatPower</xpath>
+				<value>
+					<combatPower>276</combatPower>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CAElite"]/combatPower</xpath>
+				<value>
+					<combatPower>290</combatPower>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="VanyaPK_CASlugger"]/combatPower</xpath>
+				<value>
+					<combatPower>310</combatPower>
+				</value>
+			</li>			
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>

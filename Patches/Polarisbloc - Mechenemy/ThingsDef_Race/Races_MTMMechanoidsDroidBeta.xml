@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		<li>Polarisbloc - Mechenemy</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+               <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Vanya_DroidBeta"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.RacePropertiesExtensionCE">
+                            <bodyShape>Humanoid</bodyShape>
+                        </li>
+                    </value>
+                </li>		
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Vanya_DroidBeta"]/statBases/ArmorRating_Sharp</xpath>
+                    <value>
+                        <ArmorRating_Sharp>8.50</ArmorRating_Sharp>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Vanya_DroidBeta"]/statBases/ArmorRating_Blunt</xpath>
+                    <value>
+                        <ArmorRating_Blunt>12</ArmorRating_Blunt>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Vanya_DroidBeta"]/statBases</xpath>
+                    <value>
+						<MeleeCritChance>0.22</MeleeCritChance>
+						<MeleeParryChance>0.10</MeleeParryChance>
+                        <MaxHitPoints>220</MaxHitPoints>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Vanya_DroidBeta"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>46.0</power>
+                                <cooldownTime>1.75</cooldownTime>
+                                <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+                                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                                <armorPenetrationSharp>2.4</armorPenetrationSharp>
+								<armorPenetrationBlunt>5.8</armorPenetrationBlunt>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left blade</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>26.0</power>
+                                <cooldownTime>1.50</cooldownTime>
+                                <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+                                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+								<armorPenetrationSharp>45</armorPenetrationSharp>
+                                <armorPenetrationBlunt>22</armorPenetrationBlunt>
+                            </li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right blade</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>46</power>
+								<cooldownTime>1.75</cooldownTime>
+								<linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+								<armorPenetrationSharp>2.4</armorPenetrationSharp>
+								<armorPenetrationBlunt>5.8</armorPenetrationBlunt>
+								<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right blade</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>26</power>
+								<cooldownTime>1.33</cooldownTime>
+								<linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+								<armorPenetrationSharp>45</armorPenetrationSharp>
+								<armorPenetrationBlunt>22</armorPenetrationBlunt>
+								<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>5.9</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>2</armorPenetrationBlunt>
+							</li>								
+                        </tools>
+                    </value>
+                </li>
+			
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>

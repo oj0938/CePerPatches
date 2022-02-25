@@ -1,0 +1,317 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Polarisbloc - Mechenemy</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_PlasmaSword"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+						<label>handle</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>3</power>
+						<cooldownTime>1.55</cooldownTime>
+						<chanceFactor>0.12</chanceFactor>
+						<armorPenetrationBlunt>.80</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+							<label>edge</label>
+							<capacities>
+								<li>Vanya_Burn</li>
+							</capacities>
+							<power>38</power>
+							<cooldownTime>2.02</cooldownTime>
+							<chanceFactor>0.30</chanceFactor>
+							<armorPenetrationBlunt>4.6</armorPenetrationBlunt>
+							<armorPenetrationSharp>16</armorPenetrationSharp>
+							<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+						<label>point</label>
+							<capacities>
+								<li>Vanya_Burn</li>
+							</capacities>
+							<power>18</power>
+							<cooldownTime>1.0</cooldownTime>
+							<armorPenetrationBlunt>4.64</armorPenetrationBlunt>
+							<armorPenetrationSharp>24</armorPenetrationSharp>
+						</li>
+					</tools>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_VibrateKnife"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+							<label>handle</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>3</power>
+							<cooldownTime>1.55</cooldownTime>
+							<armorPenetrationBlunt>0.60</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+							</li>
+						<li Class="CombatExtended.ToolCE">
+							<label>edge</label>
+							<capacities>
+								<li>Vanya_Burn</li>
+							</capacities>
+							<power>12</power>
+							<cooldownTime>0.95</cooldownTime>
+							<chanceFactor>1.30</chanceFactor>
+							<armorPenetrationBlunt>3.0</armorPenetrationBlunt>
+							<armorPenetrationSharp>7.45</armorPenetrationSharp>
+							<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+						<label>point</label>
+							<capacities>
+								<li>Vanya_Burn</li>
+							</capacities>
+							<power>6</power>
+							<cooldownTime>0.75</cooldownTime>
+							<armorPenetrationBlunt>1.45</armorPenetrationBlunt>
+							<armorPenetrationSharp>8</armorPenetrationSharp>
+						</li>
+					</tools>
+				</value>
+			</li>			
+		
+		  <!--ChaserArmadaGun-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_StalkerRifle"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>11</power>
+						<cooldownTime>1.55</cooldownTime>
+						<chanceFactor>1.5</chanceFactor>
+						<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+							<label>barrel</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>5</power>
+							<cooldownTime>2.02</cooldownTime>
+							<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+						<label>muzzle</label>
+							<capacities>
+								<li>Poke</li>
+							</capacities>
+							<power>8</power>
+							<cooldownTime>1.55</cooldownTime>
+							<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+						</li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>Vanya_StalkerRifle</defName>
+				<statBases>
+					<Bulk>7.50</Bulk>
+					<Mass>2.7</Mass>
+					<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+					<SightsEfficiency>2.15</SightsEfficiency>
+					<SwayFactor>1.05</SwayFactor>
+					<ShotSpread>0.05</ShotSpread>
+				</statBases>
+				<Properties>
+					<recoilAmount>1.74</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_6x24mmVanyaSF</defaultProjectile>
+					<warmupTime>1.325</warmupTime>
+					<range>62</range>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+					<soundCast>Shot_ChargeRifle</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</Properties>
+				<AmmoUser>
+					<magazineSize>30</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_6x24mmVanyaSF</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+				</FireModes>
+			</li>
+			
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_HunterSniper"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>11</power>
+							<cooldownTime>1.55</cooldownTime>
+							<chanceFactor>1.5</chanceFactor>
+							<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+							<label>barrel</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>5</power>
+							<cooldownTime>2.02</cooldownTime>
+							<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+						<label>muzzle</label>
+							<capacities>
+								<li>Poke</li>
+							</capacities>
+							<power>8</power>
+							<cooldownTime>1.55</cooldownTime>
+							<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+						</li>
+					</tools>
+				</value>
+			</li>			
+	
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>Vanya_HunterSniper</defName>
+				<statBases>
+					<Bulk>23.00</Bulk>
+					<Mass>4.00</Mass>
+					<RangedWeapon_Cooldown>1.37</RangedWeapon_Cooldown>
+					<SightsEfficiency>2.51</SightsEfficiency>
+					<SwayFactor>1.57</SwayFactor>
+					<ShotSpread>0.01</ShotSpread>
+				</statBases>
+				<Properties>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_8x35mmVanyaSF</defaultProjectile>
+					<warmupTime>1.525</warmupTime>
+					<range>84</range>
+					<soundCast>Shot_ChargeRifle</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</Properties>
+				<AmmoUser>
+					<magazineSize>10</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_8x35mmVanyaSF</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aiAimMode>AimedShot</aiAimMode>
+				</FireModes>
+			</li>
+		  <!-- Hellsong -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Vanya_HellSong"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+						<label>stock</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>11</power>
+							<cooldownTime>1.55</cooldownTime>
+							<chanceFactor>1.5</chanceFactor>
+							<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+							<label>barrel</label>
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>5</power>
+							<cooldownTime>2.02</cooldownTime>
+							<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+						</li>
+						<li Class="CombatExtended.ToolCE">
+						<label>muzzle</label>
+							<capacities>
+								<li>Poke</li>
+							</capacities>
+							<power>8</power>
+							<cooldownTime>1.55</cooldownTime>
+							<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+							<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+						</li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>Vanya_HellSong</defName>
+				<statBases>
+					<Bulk>7.50</Bulk>
+					<Mass>2.7</Mass>
+					<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+					<SightsEfficiency>2.15</SightsEfficiency>
+					<SwayFactor>1.05</SwayFactor>
+					<ShotSpread>0.05</ShotSpread>
+				</statBases>
+				<Properties>
+					<recoilAmount>1.74</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_Hellsong_HE</defaultProjectile>
+					<warmupTime>1.225</warmupTime>
+					<range>32</range>
+					<burstShotCount>1</burstShotCount>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>14</muzzleFlashScale>
+				</Properties>
+				<AmmoUser>
+					<magazineSize>5</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_Hellsong</ammoSet>
+				</AmmoUser>
+				<FireModes>
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+				</FireModes>
+			</li>	
+
+			
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>

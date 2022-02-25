@@ -1,0 +1,65 @@
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Polarisbloc - Mechenemy</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidAlpha"]//*[def="MechanicalThorax" or def="Vanya_DroidReactor" or def="Vanya_DroidThruster" or def="Vanya_DroidManipulationTool" or def="FluidReprocessor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>	
+
+		        <li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidBeta"]//*[def="MechanicalThorax" or def="MechanicalHead" or def="MechanicalShoulder" or def="MechanicalArm" or def="MechanicalHand" or def="Vanya_DroidReactor" or def="MechanicalLeg" or def="MechanicalFoot" or def="FluidReprocessor" or def="Vanya_DroidReactiveArmor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>			
+
+		        <li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidBetaEX"]//*[def="MechanicalThorax" or def="MechanicalHead" or def="MechanicalShoulder" or def="MechanicalArm" or def="MechanicalHand" or def="Vanya_DroidReactor" or def="MechanicalLeg" or def="MechanicalFoot" or def="FluidReprocessor" or def="Vanya_DroidReactiveArmor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>			
+
+		        <li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidGamma"]//*[def="MechanicalThorax" or def="MechanicalHead" or def="Vanya_DroidReactor" or def="Vanya_DroidLBLeg" or def="Vanya_DroidLBFoot" or def="Vanya_DroidRBLeg" or def="Vanya_DroidRBFoot" or def="Vanya_DroidLTLeg" or def="Vanya_DroidLTFoot" or def="Vanya_DroidRTLeg"  or def="Vanya_DroidRTFoot"  or def="Vanya_DroidManipulationTool"  or def="FluidReprocessor"  or def="Vanya_DroidReactiveArmor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>	
+	
+		        <li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidGammaEX"]//*[def="MechanicalThorax" or def="MechanicalHead" or def="Vanya_DroidReactor" or def="Vanya_DroidLBLeg" or def="Vanya_DroidLBFoot" or def="Vanya_DroidRBLeg" or def="Vanya_DroidRBFoot" or def="Vanya_DroidLTLeg" or def="Vanya_DroidLTFoot" or def="Vanya_DroidRTLeg"  or def="Vanya_DroidRTFoot"  or def="Vanya_DroidManipulationTool"  or def="FluidReprocessor"  or def="Vanya_DroidReactiveArmor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>		
+				
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidRuler"]//*[def="MechanicalThorax" or def="MechanicalHead" or def="MechanicalShoulder" or def="MechanicalArm" or def="MechanicalHand" or def="Vanya_DroidReactiveArmor" or def="MechanicalLeg" or def="MechanicalFoot" or def="Vanya_DroidReactor" or def="FluidReprocessor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>	
+
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/BodyDef[defName="Vanya_DroidFortress"]//*[def="Vanya_DroidChassis" or def="MechanicalHead" or def="Vanya_DroidPowerCore" or def="Vanya_DroidManipulationTool" or def="Vanya_DroidTrack" or def="Vanya_DroidHub" or def="Vanya_DroidBearing" or def="Vanya_DroidReactiveArmor" or def="Vanya_DroidReactor" or def="FluidReprocessor"]/groups</xpath>
+                    <value>
+                        <li>CoveredByNaturalArmor</li>
+                    </value>
+                </li>					
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

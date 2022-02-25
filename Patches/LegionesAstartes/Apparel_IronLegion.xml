@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Legiones Astartes: Primarch</li>
+			</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+<!--=============== Perturabo ====================-->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/statBases</xpath>
+				<value>
+					<Bulk>110</Bulk>
+					<WornBulk>25</WornBulk>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/statBases</xpath>
+				<value>
+					<Mass>85</Mass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>35</ArmorRating_Sharp>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>80</CarryWeight>
+					<CarryBulk>10</CarryBulk>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>-0.05</MoveSpeed>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Armor"]/statBases/MaxHitPoints</xpath>
+				<value>
+				  <MaxHitPoints>700</MaxHitPoints>
+				</value>
+			</li>
+
+  <!-- ========== Perturabo Armor Helmet ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/statBases</xpath>
+				<value>
+					<Bulk>6</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/statBases/MaxHitPoints</xpath>
+			<value>
+			  <MaxHitPoints>290</MaxHitPoints>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+			  <ArmorRating_Sharp>14</ArmorRating_Sharp>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+			  <ArmorRating_Blunt>36</ArmorRating_Blunt>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/equippedStatOffsets</xpath>
+			<value>
+			  <equippedStatOffsets>
+				<PsychicSensitivity>-0.2</PsychicSensitivity>
+				<ToxicSensitivity>-0.20</ToxicSensitivity>
+			  </equippedStatOffsets>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_Perturabo_Head"]/apparel/layers</xpath>
+			<value>
+			  <li>OnHead</li>
+			  <li>StrappedHead</li>
+			  <li>MiddleHead</li>
+			</value>
+		  </li>
+
+	<!--=============== Iron Warriors ====================-->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/statBases</xpath>
+				<value>
+					<Bulk>120</Bulk>
+					<WornBulk>20</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/statBases/MaxHitPoints</xpath>
+				<value>
+				  <MaxHitPoints>700</MaxHitPoints>
+				</value>
+		  </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/statBases</xpath>
+				<value>
+					<Mass>90</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>35</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				</value>
+			</li>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</value>
+			</li>	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>85</CarryWeight>
+					<CarryBulk>25</CarryBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Armor"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+			
+  <!-- ========== Iron Warriors Armor Helmet ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/statBases</xpath>
+				<value>
+					<Bulk>6</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/statBases/MaxHitPoints</xpath>
+			<value>
+			  <MaxHitPoints>290</MaxHitPoints>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+			  <ArmorRating_Sharp>14</ArmorRating_Sharp>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+			  <ArmorRating_Blunt>36</ArmorRating_Blunt>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Helmet"]/apparel/layers</xpath>
+			<value>
+			  <li>OnHead</li>
+			  <li>StrappedHead</li>
+			  <li>MiddleHead</li>
+			</value>
+		  </li>
+
+   <!-- ========== Iron Warrios Jump Pack ========== -->
+
+		<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/statBases</xpath>
+				<value>
+					<Bulk>100</Bulk>
+					<WornBulk>30</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/statBases/MaxHitPoints</xpath>
+				<value>
+				  <MaxHitPoints>650</MaxHitPoints>
+				</value>
+		  </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/statBases</xpath>
+				<value>
+					<Mass>90</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>30</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>60</ArmorRating_Blunt>
+				</value>
+			</li>			
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<CarryWeight>85</CarryWeight>
+						<CarryBulk>25</CarryBulk>		
+						<MoveSpeed>-0.3</MoveSpeed>
+						<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+						<AimingAccuracy>0.10</AimingAccuracy>
+					</equippedStatOffsets>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_JumpPack"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+
+ <!-- ========== Iron Warrios Techmarine Armor ========== -->
+  
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/statBases</xpath>
+				<value>
+					<Bulk>100</Bulk>
+					<WornBulk>15</WornBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/statBases/MaxHitPoints</xpath>
+				<value>
+				  <MaxHitPoints>600</MaxHitPoints>
+				</value>
+		  </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/statBases</xpath>
+				<value>
+					<Mass>80</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>30</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>60</ArmorRating_Blunt>
+				</value>
+			</li>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>-0.05</MoveSpeed>
+				</value>
+			</li>	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>80</CarryWeight>
+					<CarryBulk>20</CarryBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Armor"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+
+  <!-- ========== Iron Warriors Armor Helmet ========== -->
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/statBases</xpath>
+				<value>
+					<Bulk>6</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/statBases/MaxHitPoints</xpath>
+			<value>
+			  <MaxHitPoints>290</MaxHitPoints>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+			  <ArmorRating_Sharp>14</ArmorRating_Sharp>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+			  <ArmorRating_Blunt>36</ArmorRating_Blunt>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Techmarine_Helmet"]/apparel/layers</xpath>
+			<value>
+			  <li>OnHead</li>
+			  <li>StrappedHead</li>
+			  <li>MiddleHead</li>
+			</value>
+		  </li>
+
+<!-- ========== Iron Warrios Apothecary Armor ========== -->
+  
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/statBases/MaxHitPoints</xpath>
+				<value>
+				  <MaxHitPoints>600</MaxHitPoints>
+				</value>
+		  </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/statBases</xpath>
+				<value>
+					<Mass>90</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>30</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>60</ArmorRating_Blunt>
+				</value>
+			</li>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/equippedStatOffsets/MoveSpeed</xpath>
+				<value>
+					<MoveSpeed>-0.05</MoveSpeed>
+				</value>
+			</li>	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryWeight>80</CarryWeight>
+					<CarryBulk>20</CarryBulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Armor"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>Hands</li>
+					<li>Feet</li>
+				</value>
+			</li>
+
+  <!-- ========== Iron Warriors Armor Helmet ========== -->
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/statBases</xpath>
+				<value>
+					<Bulk>6</Bulk>
+					<WornBulk>1</WornBulk>
+				</value>
+			</li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/statBases/MaxHitPoints</xpath>
+			<value>
+			  <MaxHitPoints>290</MaxHitPoints>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+			  <ArmorRating_Sharp>14</ArmorRating_Sharp>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+			  <ArmorRating_Blunt>36</ArmorRating_Blunt>
+			</value>
+		  </li>
+
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="LAP_Armour_IronWarriors_Apothecary_Helmet"]/apparel/layers</xpath>
+			<value>
+			  <li>OnHead</li>
+			  <li>StrappedHead</li>
+			  <li>MiddleHead</li>
+			</value>
+		  </li>
+
+
+		</operations>
+	</match>
+</Operation>
+</Patch>  

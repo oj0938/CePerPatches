@@ -1,0 +1,215 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="CombatExtended.PatchOperationFindMod">
+				<modName>Polarisbloc - Mechenemy</modName>
+			</li>
+
+
+			<!-- ========== Common ========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[
+				defName="Vanya_Grenade"
+				]/graphicData</xpath>
+				<value>
+					<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[
+				defName="Vanya_Grenade" 
+				]</xpath>
+				<attribute>Class</attribute>
+				<value>CombatExtended.AmmoDef</value>
+			</li>
+
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[
+						defName="Vanya_Grenade"
+						]/comps</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[
+						defName="Vanya_Grenade"
+						]</xpath>
+						<value>
+							<comps />
+						</value>
+					</li>
+				</operations>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+				defName="Vanya_Grenade"
+				]/thingClass</xpath>
+				<value>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[
+						defName="Vanya_Grenade"
+						]/comps</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[
+						defName="Vanya_Grenade"
+						]</xpath>
+						<value>
+							<comps />
+						</value>
+					</li>
+				</operations>
+			</li>
+
+			<!-- ========== Vanya_Grenade ========== -->
+
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>Vanya_Grenade</defName>
+				<statBases>
+					<Mass>0.595</Mass>
+					<Bulk>0.91</Bulk>
+					<MarketValue>25.95</MarketValue>
+					<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+					<SightsEfficiency>0.45</SightsEfficiency>
+				</statBases>
+				<Properties>
+					<label>throw pulse bomb</label>
+					<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>15.0</range>
+			        <forcedMissRadius>1.0</forcedMissRadius>		
+					<minRange>4</minRange>
+					<warmupTime>0.8</warmupTime>
+					<noiseRadius>4</noiseRadius>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>ThrowGrenade</soundCast>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Proj_Vanya_Grenade</defaultProjectile>
+					<onlyManualCast>true</onlyManualCast>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				</Properties>
+				<weaponTags>
+					<li>CE_AI_Grenade</li>
+					<li>CE_OneHandedWeapon</li>
+				</weaponTags>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_Grenade"]/comps</xpath>
+				<value>
+				  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<damageAmountBase>65</damageAmountBase>
+					<explosiveDamageType>Vanya_IgnoreDiffusionEX</explosiveDamageType>
+					<explosiveRadius>2</explosiveRadius>
+				  </li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Vanya_Grenade"]/comps</xpath>
+				<value>
+				  <li Class="CombatExtended.CompProperties_Fragments">
+					<fragments>
+						<Fragment_Small>60</Fragment_Small>
+					</fragments>
+				  </li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Proj_Vanya_Grenade"]/projectile</xpath>
+				<value>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<explosionRadius>2</explosionRadius>
+						<damageDef>Vanya_IgnoreDiffusionEX</damageDef>
+						<damageAmountBase>65</damageAmountBase>
+						<explosionDelay>60</explosionDelay>
+						<dropsCasings>true</dropsCasings>
+						<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<speed>5</speed>
+					</projectile>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Proj_Vanya_Grenade"]/comps</xpath>
+				<value>
+					<li Class="CombatExtended.CompProperties_Fragments">
+						<fragments>
+							<Fragment_Small>60</Fragment_Small>
+						</fragments>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="GrenadeRecipeBase">
+						<defName>MakeSmallpulsegernades</defName>
+						<label>make small pulse bomb x10</label>
+						<description>Craft 10 small pulse bomb.</description>
+						<jobString>Making small pulse bombs.</jobString>
+						<workAmount>3200</workAmount>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Steel</li>
+									</thingDefs>
+								</filter>
+								<count>25</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>FSX</li>
+									</thingDefs>
+								</filter>
+								<count>4</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>4</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Steel</li>
+								<li>FSX</li>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Vanya_Grenade>10</Vanya_Grenade>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+
+
+
+		</operations>
+	</Operation>
+</Patch>
